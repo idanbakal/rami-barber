@@ -1,0 +1,97 @@
+*{
+  margin: 0;
+}
+@media screen and(max-width: 599px){
+  body{
+    font-size: 1rem;
+  }
+}
+.nav{
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  background-color: rgba(0, 0, 0, 0.151);
+  transition: 1s;
+}
+.nav>span{
+  direction: rtl;
+}
+.nav>span:hover{
+  transition: 1s;
+  color: #D5AD6D; /*if no support for background-clip*/
+  
+  background: -webkit-linear-gradient(transparent, transparent),
+             -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px , 2px , 5px ;
+  text-shadow: 2px , 2px , 5px ;
+}
+.sec-2{
+  background-color: rgba(30, 30, 30, 0.772);
+  height: 100vh;
+  overflow-x: hidden;
+  display: grid;
+  place-items: center;
+grid-template-columns: repeat(2 , 1fr) ;
+}
+@media (max-width: 599px) {
+  .sec-2 {
+    grid-template-columns: 1fr; /* Change to a single column layout */
+    /*grid-auto-rows: minmax(200px, auto);  Set row height based on content */
+  }
+  
+}
+.rami-work{
+  height: 70vh;
+  width: 30vw;
+  background-color: whitesmoke;
+}
+@media (max-width: 599px){
+  .rami-work{
+    width: 90%;
+    }
+
+}
+
+.rami-work-txt{
+  width: 30vw;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  direction: rtl;
+  background-image: linear-gradient(
+      to right,
+      #462523 0,
+             #cb9b51 22%, 
+      #f6e27a 45%,
+      #f6f2c0 50%,
+      #f6e27a 55%,
+      #cb9b51 78%,
+      #462523 100%
+      );
+       color:transparent;
+       -webkit-background-clip:text;  
+}
+@media (max-width: 599px){
+  .rami-work-txt{
+    width: 90%;
+    height: 50%;
+    background-image: linear-gradient(
+      to right,
+      #462523 0,
+             #cb9b51 22%, 
+      #f6e27a 45%,
+      #f6f2c0 50%,
+      #f6e27a 55%,
+      #cb9b51 78%,
+      #462523 100%
+      );
+       color:transparent;
+       -webkit-background-clip:text;  
+    
+    }
+
+}
+
